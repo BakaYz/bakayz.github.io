@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="3; URL=https://pastebin.com/iBATudzZ" />
     <title>Document</title>
 </head>
 <body>
-    
+   <pre> lda 4000H;
+mvi c,00H;
+mov b,a;
+lda 4001H;
+add b;
+jnc test
+inr c;
+test: sta 4002H;
+mov a,c;
+sta 4003H
+HLT
+       </pre>
 </body>
 </html>
